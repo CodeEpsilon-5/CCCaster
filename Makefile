@@ -192,8 +192,8 @@ $(FOLDER):
 res/rollback.bin: tools/$(GENERATOR)
 ifeq ($(UNAME),Darwin)
 	wine tools/$(GENERATOR) $@
-else
-	tools/$(GENERATOR) $@
+# else
+# 	tools/$(GENERATOR) $@
 endif
 	@echo
 
@@ -307,7 +307,7 @@ clean-proto:
 	rm -f $(AUTOGEN_HEADERS)
 
 clean-res:
-	rm -f res/rollback.* res/icon.res
+	rm -f res/icon.res
 	rm -rf GRP
 
 clean-lib:
