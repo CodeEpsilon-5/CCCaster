@@ -1,3 +1,4 @@
+#include <stdint.h>
 #include "KeyboardState.hpp"
 
 #include <windows.h>

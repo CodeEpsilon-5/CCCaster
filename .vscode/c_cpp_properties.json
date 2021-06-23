@@ -1,0 +1,48 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "WIN32_LEAN_AND_MEAN",
+                "WINVER=0x501",
+                "_WIN32_WINNT=0x501",
+                "_M_IX86",
+                "WINVER=0x501",
+                "NAMED_PIPE='\"\\\\\\\\.\\\\pipe\\\\cccaster_pipe\"'",
+                "PALETTES_FOLDER='\"palettes\\\\\"'",
+                "README='\"README.md\"'",
+                "MBAA_EXE='\"MBAA.exe\"'",
+                "BINARY='\"cccaster.v3.0.exe\"'",
+                "FOLDER='\"cccaster\\\\\"'",
+                "CHANGELOG='\"ChangeLog.txt\"'",
+                "HOOK_DLL='\"cccaster\\\\hook.dll\"'",
+                "LAUNCHER='\"cccaster\\\\launcher.exe\"'",
+                "UPDATER='\"updater.exe\"'",
+                "RELAY_LIST='\"relay_list.txt\"'"
+            ],
+            "windowsSdkVersion": "10.0.18362.0",
+            "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerArgs": [
+                "-m32",
+                "-static",
+                "-lws2_32",
+                "-lpsapi",
+                "-lwinpthread",
+                "-lwinmm",
+                "-lole32",
+                "-ldinput",
+                "-lwininet"
+            ]
+        }
+    ],
+    "version": 4
+}
